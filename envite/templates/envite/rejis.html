@@ -1,0 +1,127 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sephora & Mario — Gift Registry</title>
+  <link rel="stylesheet" href="{% static 'envite/css/rejis.css' %}">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@200;300;400&display=swap" rel="stylesheet"/>
+  
+</head>
+<body>
+
+  <!-- HERO -->
+  <section class="registry-hero">
+    <div class="monogram">S &amp; M</div>
+    <div class="divider-line"></div>
+    <div class="hero-names">Gift Registry</div>
+    <div class="hero-date">Sephora &amp; Mario · 12 November 2026</div> <br>
+      <p class="card-message">
+      Unfortunately, we don't have a traditional registry. <br>
+      If you would like to gift us, you can use the information
+      below. <br>
+      We appreciate your gifts!
+      <!--to either our cash fund or gift registry.-->
+      </p>
+
+  </section>
+
+  <!-- CARD -->
+  <div class="registry-card">
+    <div class="card-inner">
+      <div class="card-label">Cash Gift</div>
+      <div class="card-title">General Fund</div>
+      <div class="card-divider"></div>
+
+      <div class="payment-methods">
+
+        <div class="payment-row">
+          <div class="payment-info">
+            <div class="payment-label">Zelle</div>
+            <div class="payment-value">seph.n.mario@gmail.com</div>
+          </div>
+          <button class="copy-btn" onclick="copyValue(this, 'seph.n.mario@gmail.com')">Copy</button>
+        </div>
+        
+          <!-- Cash App Link -->
+        <div class="qr-section">
+          <a 
+            href="https://cash.app/$SephoMario26" 
+            target="_blank" 
+            class="cashapp-link">
+            ↗ Send via Cash App
+          </a>
+        </div>
+
+        <div class="qr-section">
+          <p class="qr-label">LOGIN TO YOUR ZELLE AND SCAN</p>
+          <img
+            src="{% static 'envite/images/zel.png' %}"
+            alt="Zelle QR Code"
+            class="qr-code"
+          />
+        </div>
+
+<!--
+        <div class="payment-row">
+          <div class="payment-info">
+            <div class="payment-label">Cash App</div>
+            <div class="payment-value">$SephoMario26</div>
+          </div>
+          <button class="copy-btn" onclick="copyValue(this, '$SephoraAndMario')">Copy</button>
+        </div>
+
+        <div class="payment-row">
+          <div class="payment-info">
+            <div class="payment-label">Venmo</div>
+            <div class="payment-value">@SephoraAndMario</div>
+          </div>
+          <button class="copy-btn" onclick="copyValue(this, '@SephoraAndMario')">Copy</button>
+        </div> -->
+<!--
+        <div class="payment-row">
+          <div class="payment-info">
+            <div class="payment-label">ACH — Routing Number</div>
+            <div class="payment-value">021000021</div>
+          </div>
+          <button class="copy-btn" onclick="copyValue(this, '021000021')">Copy</button>
+        </div>
+
+        <div class="payment-row">
+          <div class="payment-info">
+            <div class="payment-label">ACH — Account Number</div>
+            <div class="payment-value">000123456789</div>
+          </div>
+          <button class="copy-btn" onclick="copyValue(this, '000123456789')">Copy</button>
+        </div>
+      -->
+      </div>
+
+      <p class="card-note">
+        Please include your name in the memo<br>so we know who to thank.
+      </p>
+    </div>
+    
+  </div>
+
+  <!--GIFT LINKS
+  <div class = "gift-section">
+    <div class="gift-label"> Also on Our List</div>
+    <a class = "gift-list" href="https://www.myregistry.com/wedding-registry/ginette-jean-baptiste-and-mario-michel-killeen-tx/5439330" 
+      target="_blank">
+      <div class="gift-title">Shop Our S&MRegistry</div>
+    </a> -->
+
+  <a class="back-link" href="{% url 'maryaj' %}">← Back to Main Page</a>
+
+   <footer>
+    We cannot wait to celebrate with you.
+  </footer>
+
+  <script> src="{% static 'envite/js/rejis.js' %}" </script>
+
+</body>
+</html>

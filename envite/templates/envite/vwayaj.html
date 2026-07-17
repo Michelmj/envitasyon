@@ -1,0 +1,56 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sephora & Mario — Travel</title>
+  <link rel="stylesheet" href="{% static 'envite/css/maryaj.css' %}">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@200;300;400&display=swap" rel="stylesheet"/>
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <section class="front-hero">
+    <div class="monogram">S &amp; M</div>
+    <div class="divider-line"></div>
+    <div class="hero-names">Sephora &amp; Mario</div>
+    <div class="hero-date">Thursday, 12 November 2026</div>
+  </section>
+
+  <!-- Hotel -->
+  <div class="sections">
+    <div class="section">
+      <div class="section-label">Airports<br>Airbnb/Hotels</div>
+      <div class="section-content">
+        <h2>Airports Recommendations</h2>
+            <h3>We recommend the below airports </h3> <br>
+                <li>Orlando International Airport (MCO)</li>
+                <li>Orlando Sanford International Airport (SFB)</li>
+                <li>West Palm Beach Airport (PBI)</li>
+                <li>Fort Lauderdale-Hollywood International Airport (FLL)</li> <br>
+        <h2> Airbnb/Hotel Recommendations </h2>
+             <h3> For those who are looking for accommodations, <br> 
+                the nearby cities from the event are listed below.</h3>
+            <ul> Refer to the venue address for your most comfortable driving distance </ul>
+            <li>Fort Pierce</li>    
+            <li>Jensen Beach</li>
+            <li>Palm City</li>
+            <li>Port Saint-Lucie</li>
+            <li>Stuart</li>
+      </div>
+    </div>
+  </div>
+
+  <a class="back-link" href="{% url 'maryaj' %}">← Back to Main Page</a>
+
+  <footer>
+    We cannot wait to celebrate with you.
+  </footer>
+
+  <script src="{% static 'envite/js/vwayaj.js' %}"></script>
+
+</body>
+</html>

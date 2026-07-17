@@ -1,0 +1,107 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sephora & Mario — Wedding</title>
+  <link rel="stylesheet" href="{% static 'envite/css/maryaj.css' %}">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@200;300;400&display=swap" rel="stylesheet"/>
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <section class="front-hero">
+     <div class="monogram">S &amp; M</div> 
+     <!--
+    <img
+          class="kid"
+          src="{% static 'envite/images/kids.jpeg' %}"
+          alt="kid"
+          style="width:420px; margin-top:1.2rem; display:block; cursor:zoom-in; margin-left:auto; margin-right:auto;"
+        />-->
+ 
+    <div class="divider-line"></div>
+    <div class="hero-names">Sephora &amp; Mario</div>
+    <div class="hero-date">Thursday, 12 November 2026</div>
+  </section>
+
+  <!-- TABLE OF CONTENTS -->
+  <div class="toc-container">
+    <div class="toc-card">
+      <div class="toc-label">Our Wedding</div>
+      <div class="toc-title">Everything You Need</div>
+
+      <nav class="toc-links">
+<!--
+        <a class="toc-link" href="{% url 'maryaj' %}">
+          <div class="toc-link-left">
+            <span class="toc-number">01</span>
+            <span class="toc-link-name">Home</span>
+          </div>
+          <span class="toc-arrow">→</span>
+        </a>-->
+
+        <a class="toc-link" href="{% url 'detay' %}">
+          <div class="toc-link-left">
+            <span class="toc-number">01</span>
+            <span class="toc-link-name">Details</span>
+          </div>
+          <span class="toc-arrow">→</span>
+        </a>
+
+        <a class="toc-link" href="{% url 'istwanou' %}">
+          <div class="toc-link-left">
+            <span class="toc-number">02</span>
+            <span class="toc-link-name">Story</span>
+          </div>
+          <span class="toc-arrow">→</span>
+        </a>
+
+        <a class="toc-link" href="{% url 'vwayaj' %}">
+          <div class="toc-link-left">
+            <span class="toc-number">03</span>
+            <span class="toc-link-name">Travel</span>
+          </div>
+          <span class="toc-arrow">→</span>
+        </a>
+
+        <a class="toc-link" href="{% url 'rad' %}">
+          <div class="toc-link-left">
+            <span class="toc-number">04</span>
+            <span class="toc-link-name">Attire</span>
+          </div>
+          <span class="toc-arrow">→</span>
+        </a>
+
+        <a class="toc-link" href="{% url 'rejis' %}">
+          <div class="toc-link-left">
+            <span class="toc-number">05</span>
+            <span class="toc-link-name">Registry</span>
+          </div>
+          <span class="toc-arrow">→</span>
+        </a>
+
+        <a class="toc-link" href="{% url 'kesyon' %}">
+          <div class="toc-link-left">
+            <span class="toc-number">06</span>
+            <span class="toc-link-name">Q&A</span>
+          </div>
+          <span class="toc-arrow">→</span>
+        </a>
+
+      </nav>
+    </div>
+  </div>
+
+  <footer>
+    We cannot wait to celebrate with you.
+  </footer>
+
+  <script src="{% static 'envite/js/maryaj.js' %}"></script>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sephora & Mario — Wedding</title>
+  <link rel="stylesheet" href="{% static 'envite/css/maryaj.css' %}">
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@200;300;400&display=swap" rel="stylesheet"/>
+
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <section class="front-hero">
+    <div class="monogram">S &amp; M</div>
+    <div class="divider-line"></div>
+    <div class="hero-names">Sephora &amp; Mario</div>
+    <div class="hero-date">Thursday, 12 November 2026</div>
+
+  </section>
+
+<!-- Dress Code -->
+<div class="sections">
+  <div class="section">
+    <div class="section-label">Dress Code</div>
+    <div class="section-content">
+      <h2>Something Blue</h2>
+      <ul>
+        <li>We ask that our VIPs wear shades of blue </li>
+        <li> Men - Bow ties and ties are optional, no Hawaiian shirts </li>
+        <img
+          class="something_blue"
+          src="{% static 'envite/images/rad_ble.jpeg' %}"
+          alt="rad_ble"
+          style="width:450px; margin-top:1.2rem; display:block;"
+        />
+      </ul>
+    </div>
+  </div>
+</div>
+  
+<a class="back-link" href="{% url 'maryaj' %}">← Back to Main Page</a>
+
+  <footer>
+    We cannot wait to celebrate with you.
+  </footer>
+
+  <div class="lightbox-overlay" id="lightbox">
+    <img id="lightbox-img" src="" alt="Zoomed image" />
+  </div>
+
+  <script src="{% static 'envite/js/rad.js' %}"></script>
+
+</body>
+</html>
+
+

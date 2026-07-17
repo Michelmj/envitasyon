@@ -1,0 +1,8 @@
+django
+gunicorn
+resend
+gspread
+oauth2client
+twilio
+pillow
+psycopg2-binary

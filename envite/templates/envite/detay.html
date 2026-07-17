@@ -1,0 +1,138 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sephora & Mario — Wedding Details</title>
+  <link rel="stylesheet" href="{% static 'envite/css/detay.css' %}">
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@200;300;400&display=swap" rel="stylesheet"/>
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="monogram">S &amp; M</div>
+    <div class="divider-line"></div>
+    <div class="hero-names">Sephora &amp; Mario</div>
+    <div class="hero-date">Thursday, 12 November 2026</div>
+    <div class="scroll-hint">
+      <span>Details</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+  
+  <!-- SECTIONS -->
+  <main class="sections">
+
+    <!-- Schedule -->
+    <div class="section">
+      <div class="section-label">Schedule</div>
+      <div class="section-content">
+        <h2>The Day's Events</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <span class="timeline-time">3:00 PM</span>
+            <span class="timeline-desc">Guests arrive &amp; take pictures</span>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-time">3:30 PM</span>
+            <span class="timeline-desc">Ceremony begins - North Terrace</span>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-time">4:30 PM</span>
+            <span class="timeline-desc">Cocktail hour inside the Mansion &amp; Amphitheater</span>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-time">6:00 PM</span>
+            <span class="timeline-desc">Dinner</span>
+          </div><!--
+          <div class="timeline-item">
+            <span class="timeline-time">9:00 PM</span>
+            <span class="timeline-desc"> Dancing &amp; celebration </span>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-time">11:00 PM</span>
+            <span class="timeline-desc">Send-off &amp; farewell</span>
+          </div>-->
+        </div>
+      </div>
+    </div>
+
+    <!-- Registry 
+    <div class = "section">
+      <div class = "section-label"> Registry </div>
+      <div class = "section-content">
+        <h2> HoneyFund Registry </h2>
+        <div class="registry-item">
+          <ul>
+            <li> Your presence is a great gift. For those of you who have asked 
+              about whether we would have a fund, if you wish to contribute, 
+              we have set up a cash fund.</li>
+
+            <li> Please checkout our honeyfund below</li>
+            <a class="directions-link" href="{% url 'rejis' %}"> ↗ View Registry </a>
+          </ul>
+      </div>
+      </div>
+    </div> -->
+
+    <!-- Venue -->
+    <div class="section">
+      <div class="section-label">Venue</div>
+      <div class="section-content">
+        <h2>The Mansion at Tuckahoe</h2>
+        <p>1707 NE Indian River Dr, Jensen Beach, FL 34957</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12095.49720010329!2d-80.23011262419764!3d27.22720796074258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88dee76a2e239eff%3A0x5e43be74b1476ec5!2s%E2%80%8BThe%20Mansion%20at%20Tuckahoe!5e1!3m2!1sen!2sus!4v1774921798928!5m2!1sen!2sus"
+  width="600"
+  height="180"
+  style="border:0; margin-top:1.2rem;"
+  allowfullscreen=""
+  loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+      </div>
+    </div>
+
+    <!-- Parking -->
+    <div class="section">
+      <div class="section-label">Parking</div>
+      <div class="section-content">
+        <h2>Arrival &amp; Parking</h2>
+        <ul>
+          <li>There are different parking spots at the mansion as shown in the picture below</li>
+          <li> The ceremony is happening at the North Terrace</li>
+           <li>If you park by the North Terrace, go up the steps and you will find yourself <br>
+            at the cermony location. If you park on the west side of the place, you can also<br>
+            go up the steps and come through the mansion </li>
+          <li>Rideshare drop-off at the circular driveway</li>
+          <li>Accessible parking near the south side entrance</li>
+          <img 
+            class="parking-img"
+            src = "{% static 'envite/images/tuckahoe_parking.png' %}"
+            alt = "Parking area"
+            style = "width:70%; margin-top:1.2rem; display:block;"
+          />
+        </ul>
+      </div>
+    </div>  
+
+  </main>
+
+<a class="back-link" href="{% url 'maryaj' %}">← Back to Main Page</a>
+
+  <footer>
+    We cannot wait to celebrate with you.
+  </footer>
+
+  <div class="lightbox-overlay" id="lightbox">
+    <img id="lightbox-img" src="" alt="Zoomed parking" />
+  </div>
+
+  <script src="{% static 'envite/js/detay.js' %}"></script>
+  
+</body>
+</html>
