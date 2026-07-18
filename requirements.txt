@@ -1,9 +1,6 @@
 django
 gunicorn
-resend
-gspread
-oauth2client
-twilio
+whitenoise
 pillow
 psycopg2-binary
 dj-database-url
