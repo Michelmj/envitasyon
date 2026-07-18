@@ -6,3 +6,4 @@ oauth2client
 twilio
 pillow
 psycopg2-binary
+dj-database-url
