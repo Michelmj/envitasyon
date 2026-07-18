@@ -29,11 +29,10 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 #DEBUG = False
 DEBUG = os.environ.get('DEBUG', 'False') == 'True'
 
-ALLOWED_HOSTS = ['envitasyon-production.up.railway.app']
+ALLOWED_HOSTS = ['*']
 CSRF_TRUSTED_ORIGINS = [
-    'envitasyon-production.up.railway.app',
+    'https:/envitasyon-production.up.railway.app',
 ]
-
 
 # Application definition
 
