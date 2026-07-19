@@ -66,7 +66,7 @@ body {
 
 .registry-hero .hero-name {
     font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(1.4rem, 4vw, 2.4rem);
+    font-size: clamp(1.4rem, 3vw, 1.85rem);
     font-weight: 300;
     letter-spacing: 0.15em;
     text-transform: uppercase;
@@ -358,23 +358,4 @@ footer {
 @keyframes scrollPulse {
     0%, 100% { opacity: 0.4; }
     50%       { opacity: 1; }
-}
-
-/* ── ANIMATIONS ── */
-@keyframes fadeUp {
-    from { opacity: 0; transform: translateY(20px); }
-    to   { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes scrollPulse {
-    0%, 100% { opacity: 0.4; }
-    50%       { opacity: 1; }
-}
-
-/* ── RESPONSIVE ── */
-@media (max-width: 600px) {
-    .section {
-    grid-template-columns: 1fr;
-    gap: 0.5rem;
-    }
 }
