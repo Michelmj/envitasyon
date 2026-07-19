@@ -41,7 +41,7 @@ body {
         radial-gradient(circle at 90% 20%, rgba(184,154,94,0.06) 0%, transparent 50%);
     pointer-events: none;
 }
-
+/*
 .kid {
     opacity: 0;
     transform: translateY(30px);
@@ -51,7 +51,7 @@ body {
     margin-right: auto;
     mix-blend-mode:var(--gold-light);
     border-radius: 4px;
-}
+}*/
 
 .monogram {
     font-family: cursive;
