@@ -64,17 +64,6 @@ body {
     animation: fadeUp 1s ease forwards 0.7s;
 }
 
-.registry-hero .hero-name {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(1.4rem, 3vw, 1.85rem);
-    font-weight: 300;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    color: var(--dark);
-    opacity: 0;
-    animation: fadeUp 1s ease forwards 0.7s;
-}
-
 .registry-hero .hero-date {
     font-size: 0.85rem;
     letter-spacing: 0.3em;
