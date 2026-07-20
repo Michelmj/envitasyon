@@ -199,7 +199,7 @@ body {
     color: #1c1a17;
     color: var(--dark);
 }
-
+/*
 .copy-btn {
     padding: 0.5rem 1.2rem;
     font-family: 'Jost', sans-serif;
@@ -217,7 +217,7 @@ body {
 }
 
 .copy-btn:hover { background: var(--gold-light); }
-.copy-btn.copied { background: #7a9e7e; }
+.copy-btn.copied { background: #7a9e7e; }*/
 
 .card-note {
     font-size: 0.8rem;
