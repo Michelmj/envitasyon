@@ -103,6 +103,7 @@ body {
     letter-spacing: 0.3em;
     text-transform: uppercase;
     color: var(--muted);
+    position: inherit;
 }
 
 .scroll-arrow {
