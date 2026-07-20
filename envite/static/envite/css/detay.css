@@ -21,7 +21,7 @@ body {
 
 /* ── HERO ── */
 .hero {
-    min-height: auto;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -103,7 +103,6 @@ body {
     letter-spacing: 0.3em;
     text-transform: uppercase;
     color: var(--muted);
-    position: inherit;
 }
 
 .scroll-arrow {
