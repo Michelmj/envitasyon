@@ -86,7 +86,7 @@ body {
 }
 
 .scroll-hint {
-    position: absolute;
+    position: relative;
     bottom:-20%;
     left: 20%;
     transform: translateX(-50%);
