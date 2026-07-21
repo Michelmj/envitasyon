@@ -195,7 +195,7 @@ footer {
 /* ── MOBILE RESPONSIVE ── */
 @media (max-width: 768px) {
 
-    /* Hero *
+    /* Hero */
     .front-hero {
         padding: 2rem 1rem 1.5rem;
     }
@@ -213,7 +213,7 @@ footer {
         letter-spacing: 0.15em;
     }
 
-    /* Sections *
+    /* Sections */
     .sections {
         padding: 2rem 1.5rem 4rem;
     }
