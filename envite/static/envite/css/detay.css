@@ -19,7 +19,7 @@ body {
     overflow-x: hidden;
 }
 
-/* ── HERO ── *
+/* ── HERO ── */
 .hero {
     min-height: auto;
     display: flex;
@@ -85,7 +85,6 @@ body {
     animation: fadeUp 1s ease forwards 0.9s;
 }
 
-/*
 .scroll-hint {
     position: absolute;
     bottom:2.5rem;
