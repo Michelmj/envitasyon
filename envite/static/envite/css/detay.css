@@ -93,14 +93,14 @@ body {
     opacity: 0;
     animation: fadeUp 1s ease forwards 1.3s;
 }
-/*
+
 .scroll-hint span {
     font-size: 0.7rem;
     letter-spacing: 0.3em;
     text-transform: uppercase;
     color: var(--muted);
     align-items: center;
-}*/
+}
 
 .scroll-arrow {
     width: 1px;
