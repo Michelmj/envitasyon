@@ -217,8 +217,7 @@ footer {
     /* Sections */
     .sections {
         padding: 2rem 1.5rem 4rem;
-        align-content:center;
-        align-items: center;
+        text-align: left;
     }
 
     .section {
