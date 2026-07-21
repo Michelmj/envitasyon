@@ -84,7 +84,7 @@ body {
     opacity: 0;
     animation: fadeUp 1s ease forwards 0.9s;
 }
-/*
+
 .scroll-hint {
     display: flex;
     flex-direction: column;
@@ -93,7 +93,7 @@ body {
     opacity: 0;
     animation: fadeUp 1s ease forwards 1.3s;
 }
-
+/*
 .scroll-hint span {
     font-size: 0.7rem;
     letter-spacing: 0.3em;
