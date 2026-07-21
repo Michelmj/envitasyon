@@ -29,13 +29,13 @@ body {
     justify-content: center;
     text-align: center;
     padding: 3rem 2rem 2rem;
-    position: absolute;
+    position: relative;
     background: radial-gradient(ellipse at 60% 40%, #ede4d3 0%, var(--cream) 70%);
 }
 
 .hero::before {
     content: '';
-    position: absolute;
+    position: relative;
     inset: 0;
     background-image:
     radial-gradient(circle at 10% 80%, rgba(184,154,94,0.08) 0%, transparent 50%),
