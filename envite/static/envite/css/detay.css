@@ -19,7 +19,7 @@ body {
     overflow-x: hidden;
 }
 
-/* ── HERO ── */
+/* ── HERO ── *
 .hero {
     min-height: auto;
     display: flex;
