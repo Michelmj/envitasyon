@@ -111,8 +111,8 @@ body {
 /* ── SECTIONS ── */
 
 iframe {
-    width: 60%;
-    max-width: 60%;
+    width: 100%;
+    max-width: 100%;
 }
 
 .sections {
