@@ -95,6 +95,7 @@ body {
 /* ── SECTION ── */
 .section {
     display: grid;
+    position: relative;
     grid-template-columns: 150px 1fr;
     gap: 2rem 3rem;
     padding: 3rem 0;
