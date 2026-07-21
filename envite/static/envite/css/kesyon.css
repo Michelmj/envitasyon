@@ -95,10 +95,11 @@ body {
 /* ── SECTION ── */
 .section {
     display: grid;
+    max-width: 650px;
     position: relative;
     grid-template-columns: 150px 1fr;
     gap: 2rem 3rem;
-    padding: 3rem 6rem 0rem 6rem;
+    padding: 3rem 6rem;
     border-bottom: none;
     opacity: 0;
     transform: translateY(30px);
