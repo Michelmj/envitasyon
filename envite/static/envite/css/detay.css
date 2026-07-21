@@ -27,7 +27,7 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 3rem 2rem 2rem;
+    padding: 3rem 2rem 6rem;
     position: relative;
     background: radial-gradient(ellipse at 60% 40%, #ede4d3 0%, var(--cream) 70%);
 }
