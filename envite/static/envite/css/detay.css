@@ -20,7 +20,7 @@ body {
 }
 
 /* ── HERO ── */
-.hero {
+.front-hero {
     min-height: auto;
     display: flex;
     flex-direction: column;
@@ -32,13 +32,13 @@ body {
     background: radial-gradient(ellipse at 60% 40%, #ede4d3 0%, var(--cream) 70%);
 }
 
-.hero::before {
+.front-hero::before {
     content: '';
     position: absolute;
     inset: 0;
     background-image:
-    radial-gradient(circle at 10% 80%, rgba(184,154,94,0.08) 0%, transparent 50%),
-    radial-gradient(circle at 90% 20%, rgba(184,154,94,0.06) 0%, transparent 50%);
+        radial-gradient(circle at 10% 80%, rgba(184,154,94,0.08) 0%, transparent 50%),
+        radial-gradient(circle at 90% 20%, rgba(184,154,94,0.06) 0%, transparent 50%);
     pointer-events: none;
 }
 
@@ -84,7 +84,7 @@ body {
     opacity: 0;
     animation: fadeUp 1s ease forwards 0.9s;
 }
-
+/*
 .scroll-hint {
     display: flex;
     flex-direction: column;
@@ -107,7 +107,7 @@ body {
     height: 40px;
     background: linear-gradient(to bottom, var(--gold), transparent);
     animation: scrollPulse 2s ease-in-out infinite;
-}
+}*/
 
 /* ── SECTIONS ── */
 
