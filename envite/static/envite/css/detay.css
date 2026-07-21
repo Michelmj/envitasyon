@@ -113,7 +113,7 @@ body {
     animation: scrollPulse 2s ease-in-out infinite;
 }
 
-/* ── SECTIONS ── *
+/* ── SECTIONS ── */
 
 iframe {
     width: 100%;
@@ -173,7 +173,7 @@ iframe {
     padding: 0;
 }
 
-/* Lightbox *
+/* Lightbox */
 .lightbox-overlay {
     display: none;
     position: fixed;
@@ -239,7 +239,7 @@ iframe {
     line-height: 1.6;
 }
 
-/* map placeholder *
+/* map placeholder */
 .map-placeholder {
     margin-top: 1.2rem;
     width: 100%;
