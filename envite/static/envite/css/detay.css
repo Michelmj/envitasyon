@@ -100,14 +100,14 @@ body {
     text-transform: uppercase;
     color: var(--muted);
     align-items: center;
-}
+}*/
 
 .scroll-arrow {
     width: 1px;
     height: 40px;
     background: linear-gradient(to bottom, var(--gold), transparent);
     animation: scrollPulse 2s ease-in-out infinite;
-}*/
+}
 
 /* ── SECTIONS ── */
 
