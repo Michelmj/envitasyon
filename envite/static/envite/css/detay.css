@@ -334,10 +334,10 @@ footer {
     }
 }
 
-/* ── MOBILE RESPONSIVE ── *
+/* ── MOBILE RESPONSIVE ── */
 @media (max-width: 768px) {
 
-    /* Hero *
+    /* Hero */
     .front-hero {
         padding: 2rem 1rem 1.5rem;
     }
@@ -355,7 +355,7 @@ footer {
         letter-spacing: 0.15em;
     }
 
-    /* Table of contents *
+    /* Table of contents */
     .toc-container {
         margin: 2rem auto 4rem;
         padding: 0 1rem;
@@ -373,7 +373,7 @@ footer {
         font-size: 1.1rem;
     }
 
-    /* Sections *
+    /* Sections */
     .sections {
         padding: 2rem 1rem 4rem;
     }
@@ -392,7 +392,7 @@ footer {
         font-size: clamp(1.3rem, 5vw, 1.8rem);
     }
 
-    /* Images *
+    /* Images */
     .something_blue {
         width: 100% !important;
         max-width: 320px;
@@ -402,18 +402,18 @@ footer {
         width: 150px !important;
     }
 
-    /* Back link *
+    /* Back link */
     .back-link {
         margin: 1.5rem auto 3rem;
     }
 
-    /* Footer *
+    /* Footer */
     footer {
         padding: 2rem 1rem;
         font-size: 0.95rem;
     }
 
-    /* Registry *
+    /* Registry */
     .gift-row {
         grid-template-columns: 1fr !important;
     }
@@ -424,7 +424,7 @@ footer {
         height: 200px;
     }
 
-    /* Registry card *
+    /* Registry card */
     .registry-card {
         padding: 0 1rem;
     }
