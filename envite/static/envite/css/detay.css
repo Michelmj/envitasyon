@@ -21,8 +21,7 @@ body {
 
 /* ── HERO ── */
 .hero {
-    min-height: 100vh;
-    max-width: 850px;
+    min-height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -35,7 +34,7 @@ body {
 
 .hero::before {
     content: '';
-    position: relative;
+    position: absolute;
     inset: 0;
     background-image:
     radial-gradient(circle at 10% 80%, rgba(184,154,94,0.08) 0%, transparent 50%),
