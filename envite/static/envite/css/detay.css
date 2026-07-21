@@ -270,7 +270,7 @@ iframe {
 
 .directions-link:hover { border-color: var(--gold); }
 
-/* contact *
+/* contact */
 .contact-item {
     display: flex;
     flex-direction: column;
@@ -290,7 +290,7 @@ iframe {
     color: var(--muted);
 }
 
-/* ── FOOTER ── *
+/* ── FOOTER ── */
 footer {
     text-align: center;
     padding: 3rem 2rem;
@@ -315,7 +315,7 @@ footer {
 
 .back-link:hover { opacity: 0.6; }
 
-/* ── ANIMATIONS ── *
+/* ── ANIMATIONS ── */
 @keyframes fadeUp {
     from { opacity: 0; transform: translateY(20px); }
     to   { opacity: 1; transform: translateY(0); }
@@ -326,7 +326,7 @@ footer {
     50%       { opacity: 1; }
 }
 
-/* ── RESPONSIVE ── *
+/* ── RESPONSIVE ── */
 @media (max-width: 600px) {
     .section {
     grid-template-columns: 1fr;
