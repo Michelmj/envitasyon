@@ -193,7 +193,7 @@ footer {
 }
 
 /* ── MOBILE RESPONSIVE ── */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
 
     /* Hero */
     .front-hero {
@@ -216,6 +216,8 @@ footer {
     /* Sections */
     .sections {
         padding: 2rem 1.5rem 4rem;
+        align-content:center;
+        align-items: center;
     }
 
     .section {
