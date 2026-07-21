@@ -53,6 +53,9 @@ body {
     opacity: 0;
     animation: fadeUp 1.2s ease forwards 0.2s;
     background: linear-gradient(90deg, var(--gold), #fff8e7, var(--gold));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .divider-line {
@@ -85,21 +88,19 @@ body {
     animation: fadeUp 1s ease forwards 0.9s;
 }
 
-/* ── SECTIONS WRAPPER ── *
+/* ── SECTIONS WRAPPER ── */
 .sections {
     max-width: 900px;
     margin: 0 auto;
-    padding: 4rem 6.5rem 1.5rem 4.5rem;
+    padding: 2rem 2rem 4rem;
 }
 
 /* ── SECTION ── */
 .section {
     display: grid;
-    max-width: 650px;
-    position: relative;
     grid-template-columns: 150px 1fr;
     gap: 2rem 3rem;
-    padding: 3rem 6rem;
+    padding: 3rem 0;
     border-bottom: none;
     opacity: 0;
     transform: translateY(30px);
