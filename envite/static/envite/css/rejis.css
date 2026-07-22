@@ -388,52 +388,6 @@ footer {
         letter-spacing: 0.15em;
     }
 
-    /* Table of contents */
-    .toc-container {
-        margin: 2rem auto 4rem;
-        padding: 0 1rem;
-    }
-
-    .toc-card {
-        padding: 2rem 1.5rem;
-    }
-
-    .toc-title {
-        font-size: clamp(1.4rem, 6vw, 2rem);
-    }
-
-    .toc-link-name {
-        font-size: 1.1rem;
-    }
-
-    /* Sections */
-    .sections {
-        padding: 2rem 1rem 4rem;
-    }
-
-    .section {
-        grid-template-columns: 1fr;
-        gap: 0.5rem;
-        padding: 2rem 0;
-    }
-
-    .section-label {
-        font-size: 0.65rem;
-    }
-
-    .section-content h2 {
-        font-size: clamp(1.3rem, 5vw, 1.8rem);
-    }
-
-    /* Images */
-    .something_blue {
-        width: 100% !important;
-        max-width: 320px;
-    }
-
-    .hero-photo {
-        width: 150px !important;
-    }
 
     /* Back link */
     .back-link {
