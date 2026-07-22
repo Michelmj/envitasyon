@@ -194,7 +194,7 @@ body {
 
 .payment-value {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 1rem;
+    font-size: .85rem;
     font-weight:500;
     color: #1c1a17;
 }
