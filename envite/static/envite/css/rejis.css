@@ -160,7 +160,6 @@ body {
     line-height: 1.2;
     color: var(--muted);
     margin-bottom: 2rem;
-    font-weight: bold;
 }
 
 .payment-methods {
