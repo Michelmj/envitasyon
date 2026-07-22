@@ -187,7 +187,6 @@ body {
     font-size: 1 rem;
     letter-spacing: 0.3em;
     text-transform: uppercase;
-    font-weight:400;
     color: black;
     margin-bottom: 0.25rem;
 }
@@ -195,7 +194,6 @@ body {
 .payment-value {
     font-family: 'Cormorant Garamond', serif;
     font-size: .65rem;
-    font-weight:300;
     color: black;
 }
 /*
