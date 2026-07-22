@@ -197,7 +197,6 @@ body {
     font-size: 1rem;
     font-weight:500;
     color: #1c1a17;
-    color: var(--dark);
 }
 /*
 .copy-btn {
