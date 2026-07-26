@@ -73,7 +73,7 @@ body {
     font-weight: 100;
     color: var(--gold);
     line-height: 1.2;
-    letter-spacing: 0;        /* remove negative letter spacing */
+    letter-spacing: -2px;        /* remove negative letter spacing */
     opacity: 0;
     animation: fadeUp 1.2s ease forwards 0.2s;
     text-shadow: 2px 2px 8px rgba(184,154,94,0.4);
