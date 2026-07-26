@@ -150,7 +150,8 @@ body {
     letter-spacing: 0.25em;
     text-transform: uppercase;
     color: var(--gold);
-    text-align: center;
+    display: block;
+    margin-bottom: 0.3rem;
 }
 
 /* ── CONTACT ── */
