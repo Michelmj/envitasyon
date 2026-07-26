@@ -145,6 +145,14 @@ body {
     text-align: center;
 }
 
+.note {
+    font-size: 0.7rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--gold);
+    text-align: center;
+}
+
 /* ── CONTACT ── */
 .contact-item {
     display: flex;
