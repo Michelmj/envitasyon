@@ -6,3 +6,10 @@ const observer = new IntersectionObserver((entries) => {
 
 if (toc) observer.observe(toc);
 
+/* Scroll observer */
+const links = document.querySelectorAll('.toc-link');
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.1 });
+
+links.forEach(link => observer.observe(link));

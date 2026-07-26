@@ -145,12 +145,20 @@ body {
 }
 
 .toc-link {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     padding: 1.2rem 0;
-    /*border-bottom: 1px solid var(--border);*/
+    border-bottom: 1px solid var(--border);
     text-decoration: none;
-    transition: opacity 0.3s;
+}
+
+.toc-link.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /*.toc-link:hover { opacity: 0.6; }*/
