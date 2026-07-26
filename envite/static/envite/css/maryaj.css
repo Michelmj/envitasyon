@@ -345,7 +345,7 @@ footer {
     }
 
     .monogram {
-        font-size: clamp(3rem, 18vw, 6rem);
+        font-size: clamp(1.5rem, 5vw, 2.5rem);
     }
 
     .hero-names {
