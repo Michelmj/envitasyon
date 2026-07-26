@@ -90,7 +90,6 @@ body {
     max-width: 900px;
     margin: 4rem auto 6rem;
     padding: 0 2rem;
-    opacity: 0;
     transform: translateY(30px);
     transition: opacity 0.8s ease, transform 0.8s ease;
     text-align: center;
