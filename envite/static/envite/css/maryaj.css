@@ -69,7 +69,7 @@ body {
 
 .monogram {
     font-family: cursive;
-    font-size: clamp(3rem, 10vw, 7rem);
+    font-size: clamp(3rem, 9vw, 6rem);
     font-weight: 100;
     color: var(--gold);
     line-height: 1.2;
