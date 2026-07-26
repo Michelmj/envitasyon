@@ -434,3 +434,46 @@ footer {
         gap: 0.8rem;
     }
 }
+
+/* ── TABLET / IPAD ── */
+@media (max-width: 1024px) and (min-width: 601px) {
+
+    .hero {
+        padding: 2rem 1.5rem;
+    }
+
+    .monogram {
+        font-size: clamp(3rem, 10vw, 7rem);
+    }
+
+    .sections {
+        padding: 3rem 1.5rem 4rem;
+    }
+
+    .section {
+        grid-template-columns: 120px 1fr;
+        gap: 1.5rem 2rem;
+        padding: 2rem 0;
+    }
+
+    .section-content h2 {
+        font-size: clamp(1.4rem, 2.5vw, 2rem);
+    }
+
+    iframe {
+        height: 150px;
+    }
+
+    .something_blue {
+        width: 280px !important;
+    }
+
+    .timeline-time {
+        min-width: 60px;
+    }
+
+    footer {
+        padding: 2rem 1.5rem;
+        font-size: 1rem;
+    }
+}

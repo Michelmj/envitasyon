@@ -441,3 +441,59 @@ footer {
         gap: 0.8rem;
     }
 }
+
+/* ── TABLET / IPAD ── */
+@media (max-width: 1024px) and (min-width: 601px) {
+
+    .front-hero {
+        padding: 2rem 1.5rem 1.5rem;
+    }
+
+    .monogram {
+        font-size: clamp(3rem, 10vw, 7rem);
+    }
+
+    /* TOC */
+    .toc-container {
+        max-width: 480px;
+        padding: 0 1.5rem;
+    }
+
+    .toc-card {
+        padding: 2.5rem 2.5rem;
+    }
+
+    .toc-link-name {
+        font-size: 1.2rem;
+    }
+
+    /* Sections */
+    .sections {
+        padding: 3rem 1.5rem 4rem;
+    }
+
+    .section {
+        grid-template-columns: 120px 1fr;
+        gap: 1.5rem 2rem;
+    }
+
+    .section-content h2 {
+        font-size: clamp(1.4rem, 2.5vw, 2rem);
+    }
+
+    /* Something blue image */
+    .something_blue {
+        width: 280px !important;
+    }
+
+    /* Back link */
+    .back-link {
+        margin: 1.5rem auto 3rem;
+    }
+
+    /* Footer */
+    footer {
+        padding: 2rem 1.5rem;
+        font-size: 1rem;
+    }
+}
