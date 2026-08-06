@@ -10,4 +10,3 @@ function copyValue(btn, value) {
       });
     }
 
-    

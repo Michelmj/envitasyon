@@ -29,3 +29,4 @@ lightboxImg.addEventListener('wheel', (e) => {
     scale = Math.min(Math.max(1, scale), 4);
     lightboxImg.style.transform = `scale(${scale})`;
 });
+
