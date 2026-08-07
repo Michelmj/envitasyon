@@ -1,12 +1,12 @@
-/* Scroll observer — combined */
+/* Scroll observer — combined *
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-}, { threshold: 0 });
+}, { threshold: 0 });*/
 
-/* Observe toc container */
+/* Observe toc container *
 const toc = document.querySelector('.toc-container');
-if (toc) observer.observe(toc);
+if (toc) observer.observe(toc);*/
 
-/* Observe each toc-link */
+/* Observe each toc-link *
 const links = document.querySelectorAll('.toc-link');
-links.forEach(link => observer.observe(link));
+links.forEach(link => observer.observe(link));*/
