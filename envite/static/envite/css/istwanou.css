@@ -52,7 +52,7 @@ body {
     letter-spacing: -0.02em;
     opacity: 0;
     animation: fadeUp 1.2s ease forwards 0.2s;
-    background: linear-gradient(90deg, var(--gold), #fff8e7, var(--gold));
+    text-shadow: 2px 2px 8px rgba(184,154,94,0.4);
 }
 
 .divider-line {
@@ -106,6 +106,7 @@ body {
     padding: 3rem 3.5rem;
     text-align: left;
     max-width: 750px;
+    opacity: 1;
 }
 
 .toc-label {

@@ -1,7 +1,7 @@
 /* Scroll observer — combined */
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-}, { threshold: 0.1 });
+}, { threshold: 0 });
 
 /* Observe toc container */
 const toc = document.querySelector('.toc-container');
