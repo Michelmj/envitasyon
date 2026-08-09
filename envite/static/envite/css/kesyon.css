@@ -51,7 +51,6 @@ body {
     letter-spacing: 0;
     opacity: 0;
     animation: fadeUp 1.2s ease forwards 0.2s;
-    text-shadow: 2px 2px 8px rgba(184,154,94,0.4);
 }
 
 .divider-line {
@@ -89,6 +88,7 @@ body {
     max-width: 900px;
     margin: 0 auto;
     padding: 4rem 2rem 6rem;
+    border: 1px solid red;  /* temporary debug */
 }
 
 /* ── SECTION ── */
