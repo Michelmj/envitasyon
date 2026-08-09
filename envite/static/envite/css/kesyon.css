@@ -163,14 +163,14 @@ body {
     letter-spacing: 0.25em;
     text-transform: uppercase;
     color: var(--gold);
-    text-align: center;
+    text-align: left;
 }
 
 .contact-value {
     font-size: 0.95rem;
     line-height: 1.9;
     color: var(--muted);
-    text-align: center;
+    text-align: left;
 }
 
 /* ── BACK LINK ── */
