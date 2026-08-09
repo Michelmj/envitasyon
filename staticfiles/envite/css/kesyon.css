@@ -147,6 +147,7 @@ body {
     color: var(--gold);
     display: block;
     margin-bottom: 0.3rem;
+    text-align: left;
 }
 
 /* ── CONTACT ── */
