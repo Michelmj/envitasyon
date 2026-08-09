@@ -85,18 +85,11 @@ body {
 
 /* ── SECTIONS WRAPPER ── */
 .sections {
-    width: 900px;
+    max-width: 900px;
+    width: 100%;
     margin-left: auto !important;
     margin-right: auto !important;
     padding: 4rem 2rem 6rem;
-}
-
-@media (max-width: 800px) {
-    .sections {
-        width: 100% !important;
-        margin: 0 auto !important;
-        padding: 2rem 1.5rem 4rem;
-    }
 }
 
 /* ── SECTION ── */

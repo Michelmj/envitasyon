@@ -46,16 +46,11 @@ body {
     font-family: cursive;
     font-size: clamp(4rem, 12vw, 9rem);
     font-weight: 100;
-    text-shadow: 2px 2px 8px rgba(5, 5, 4, 0.6);
     color: var(--gold);
-    line-height: 1;
-    letter-spacing: -0.02em;
+    line-height: 1.2;
+    letter-spacing: 0;
     opacity: 0;
     animation: fadeUp 1.2s ease forwards 0.2s;
-    background: linear-gradient(90deg, var(--gold), #fff8e7, var(--gold));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
 }
 
 .divider-line {
@@ -91,9 +86,10 @@ body {
 /* ── SECTIONS WRAPPER ── */
 .sections {
     max-width: 900px;
-    margin: 0 auto;
+    width: 100%;
+    margin-left: auto !important;
+    margin-right: auto !important;
     padding: 4rem 2rem 6rem;
-    text-align: center;
 }
 
 /* ── SECTION ── */
@@ -106,7 +102,6 @@ body {
     opacity: 0;
     transform: translateY(30px);
     transition: opacity 0.8s ease, transform 0.8s ease;
-    text-align: center;
 }
 
 .section.visible {
@@ -142,7 +137,7 @@ body {
     font-style: italic;
     margin-bottom: 1.5rem;
     color: var(--dark);
-    text-align: center;
+    text-align: left;
 }
 
 .note {
@@ -160,7 +155,7 @@ body {
     flex-direction: column;
     gap: 0.2rem;
     margin-bottom: 1rem;
-    text-align: center;
+    text-align: left;
 }
 
 .contact-role {
@@ -243,8 +238,8 @@ footer {
     /* Sections */
     .sections {
         padding: 2rem 1.5rem 4rem;
-        margin: 0 auto; 
-        padding: 4rem 2rem 6rem;
+        margin: 0 auto;  /* keep this */
+        width: 100%;     /* add this */
         text-align: center;
     }
 
