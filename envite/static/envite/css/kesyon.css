@@ -89,7 +89,6 @@ body {
     max-width: 900px;
     margin: 0 auto;
     padding: 4rem 2rem 6rem;
-    text-align: center;
 }
 
 /* ── SECTION ── */
@@ -102,7 +101,6 @@ body {
     opacity: 0;
     transform: translateY(30px);
     transition: opacity 0.8s ease, transform 0.8s ease;
-    text-align: center;
 }
 
 .section.visible {
