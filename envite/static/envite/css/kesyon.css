@@ -237,17 +237,17 @@ footer {
     }
 
     .section {
-        grid-template-columns: 1fr;
-        gap: 0.5rem;
+        grid-template-columns: 80px 1fr;
+        gap: 1rem 1.5rem;
         padding: 2rem 0;
     }
 
     .section-label {
-        font-size: 0.65rem;
+        font-size: 0.55rem;
     }
 
     .section-content h2 {
-        font-size: clamp(1.3rem, 5vw, 1.8rem);
+        font-size: clamp(1.1rem, 4vw, 1.6rem);
     }
 
     /* Back link */
