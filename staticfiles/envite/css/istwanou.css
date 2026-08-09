@@ -52,7 +52,7 @@ body {
     letter-spacing: -0.02em;
     opacity: 0;
     animation: fadeUp 1.2s ease forwards 0.2s;
-    text-shadow: 2px 2px 8px rgba(184,154,94,0.4);
+    background: linear-gradient(90deg, var(--gold), #fff8e7, var(--gold));
 }
 
 .divider-line {
@@ -85,38 +85,14 @@ body {
     animation: fadeUp 1s ease forwards 0.9s;
 }
 
-/* ── TOC CONTAINER ── *
+/* ── TOC CONTAINER ── */
 .toc-container {
     max-width: 900px;
     margin: 4rem auto 6rem;
     padding: 0 2rem;
-    opacity: 0;
     transform: translateY(30px);
     transition: opacity 0.8s ease, transform 0.8s ease;
     text-align: center;
-}*/
-
-.toc-container {
-    max-width: 900px;
-    margin: 4rem auto 6rem;
-    padding: 0 2rem;
-    opacity: 1;           /* always visible */
-    transform: none;      /* no transform */
-    transition: none;     /* no transition */
-    text-align: center;
-}
-
-.toc-link {
-    opacity: 1;           /* always visible */
-    transform: none;      /* no transform */
-    transition: none;     /* no transition */
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 1.2rem 0;
-    border-bottom: 1px solid var(--border);
-    text-decoration: none;
-    gap: 0.5rem;
 }
 
 .toc-container.visible {
@@ -129,7 +105,6 @@ body {
     padding: 3rem 3.5rem;
     text-align: left;
     max-width: 750px;
-    opacity: 1;
 }
 
 .toc-label {
@@ -166,9 +141,8 @@ body {
     display: flex;
     flex-direction: column;
     gap: 0;
-    /*border-top: 1px solid var(--border);*/
 }
-/*
+
 .toc-link {
     opacity: 0;
     transform: translateY(20px);
@@ -177,9 +151,9 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 1.2rem 0;
-    border-bottom: 1px solid var(--border);
+    /*border-bottom: 1px solid var(--border);*/
     text-decoration: none;
-}*/
+}
 
 .toc-link.visible {
     opacity: 1;
@@ -246,7 +220,7 @@ footer {
     font-style: italic;
     font-size: 1.1rem;
     color: var(--gold);
-    border-top: 1px solid var(--border);
+    /*border-top: 1px solid var(--border);*/
 }
 
 /* ── ANIMATIONS ── */
@@ -320,15 +294,6 @@ footer {
         font-size: clamp(1.3rem, 5vw, 1.8rem);
     }
 
-    /* Images */
-    .something_blue {
-        width: 100% !important;
-        max-width: 320px;
-    }
-
-    .hero-photo {
-        width: 150px !important;
-    }
 
     /* Back link */
     .back-link {
@@ -339,31 +304,5 @@ footer {
     footer {
         padding: 2rem 1rem;
         font-size: 0.95rem;
-    }
-
-    /* Registry */
-    .gift-row {
-        grid-template-columns: 1fr !important;
-    }
-
-    .gift-image img,
-    .gift-image-placeholder {
-        width: 100% !important;
-        height: 200px;
-    }
-
-    /* Registry card */
-    .registry-card {
-        padding: 0 1rem;
-    }
-
-    .card-inner {
-        padding: 2rem 1.5rem;
-    }
-
-    .payment-row {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.8rem;
     }
 }

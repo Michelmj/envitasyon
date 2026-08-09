@@ -10,3 +10,4 @@ if (toc) observer.observe(toc);
 /* Observe each toc-link */
 const links = document.querySelectorAll('.toc-link');
 links.forEach(link => observer.observe(link));
+
