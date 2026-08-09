@@ -207,16 +207,8 @@ footer {
     to   { opacity: 1; transform: translateY(0); }
 }
 
-/* ── RESPONSIVE ── */
-@media (max-width: 600px) {
-    .section {
-        grid-template-columns: 1fr;
-        gap: 0.5rem;
-    }
-}
-
 /* ── MOBILE RESPONSIVE ── */
-@media (max-width: 800px) {
+@media (max-width: 900px) {
 
     /* Hero */
     .front-hero {
