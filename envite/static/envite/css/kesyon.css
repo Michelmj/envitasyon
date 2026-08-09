@@ -46,16 +46,12 @@ body {
     font-family: cursive;
     font-size: clamp(4rem, 12vw, 9rem);
     font-weight: 100;
-    text-shadow: 2px 2px 8px rgba(5, 5, 4, 0.6);
     color: var(--gold);
-    line-height: 1;
-    letter-spacing: -0.02em;
+    line-height: 1.2;
+    letter-spacing: 0;
     opacity: 0;
     animation: fadeUp 1.2s ease forwards 0.2s;
-    background: linear-gradient(90deg, var(--gold), #fff8e7, var(--gold));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    text-shadow: 2px 2px 8px rgba(184,154,94,0.4);
 }
 
 .divider-line {
