@@ -85,10 +85,18 @@ body {
 
 /* ── SECTIONS WRAPPER ── */
 .sections {
-    max-width: 900px;
-    margin: 0 auto;
+    width: 900px;
+    margin-left: auto !important;
+    margin-right: auto !important;
     padding: 4rem 2rem 6rem;
-    border: 1px solid red;  /* temporary debug */
+}
+
+@media (max-width: 800px) {
+    .sections {
+        width: 100% !important;
+        margin: 0 auto !important;
+        padding: 2rem 1.5rem 4rem;
+    }
 }
 
 /* ── SECTION ── */
@@ -237,8 +245,8 @@ footer {
     /* Sections */
     .sections {
         padding: 2rem 1.5rem 4rem;
-        margin: 0 auto; 
-        padding: 4rem 2rem 6rem;
+        margin: 0 auto;  /* keep this */
+        width: 100%;     /* add this */
         text-align: center;
     }
 
