@@ -105,6 +105,7 @@ body {
     padding: 3rem 3.5rem;
     text-align: left;
     max-width: 750px;
+    margin: 0 auto;
 }
 
 .toc-label {
