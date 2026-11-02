@@ -1,0 +1,132 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sephora & Mario — Seating Chart</title>
+  <link rel="stylesheet" href="{% static 'envite/css/chita.css' %}">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@200;300;400&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- HERO -->
+  <section class="front-hero">
+    <div class="monogram">S &amp; M</div>
+    <div class="divider-line"></div>
+    <div class="hero-names">Sephora &amp; Mario</div>
+    <div class="hero-date">Thursday, 12 November 2026</div>
+  </section>
+
+  <!-- SEARCH -->
+  <div class="search-container">
+    <div class="search-label">Find Your Seat</div>
+    <form method="GET" action="{% url 'chita' %}" class="search-form" id="search-form">
+      <input
+        type="text"
+        name="q"
+        value="{{ query }}"
+        placeholder="Enter your name..."
+        class="search-input"
+        id="search-input"
+        autocomplete="off"
+      />
+      <ul class="suggestions" id="suggestions"></ul>
+      <button type="submit" class="search-btn">Search</button>
+    </form>
+
+    {% if query %}
+      {% if found_table %}
+        <div class="search-result found">
+          <span class="result-name">{{ query }}</span>
+          <span class="result-arrow">→</span>
+          <span class="result-table">{{ found_table.name }}</span>
+        </div>
+      {% else %}
+        <div class="search-result not-found">
+          No guest found matching "{{ query }}" — please check your name or ask a coordinator.
+        </div>
+      {% endif %}
+    {% endif %}
+  </div>
+
+  <!-- FLOOR PLAN -->
+  <div class="floorplan" id="floorplan">
+    <img src="{% static 'envite/images/floorplan.jpeg' %}" alt="Seating floor plan">
+    {% if spot %}
+      <span class="pin" style="left: {{ spot.0 }}%; top: {{ spot.1 }}%;"></span>
+    {% endif %}
+  </div>
+
+  <!-- SEATING CHART -->
+  <div class="seating-container">
+    <div class="seating-label">Seating Arrangement</div>
+    <div class="seating-title">All Tables</div>
+
+    <div class="tables-grid">
+      {% for table in tables %}
+      <div class="table-card {% if found_table == table %}highlighted{% endif %}">
+        <div class="table-name">{{ table.name }}</div>
+        <div class="table-divider"></div>
+        <ul class="guest-list">
+          {% for guest in table.guests.all %}
+          <li class="guest-item {% if query and query.lower in guest.name.lower %}guest-found{% endif %}">
+            {{ guest.name }}
+          </li>
+          {% empty %}
+          <li class="guest-item empty">No guests assigned</li>
+          {% endfor %}
+        </ul>
+        <div class="table-capacity">{{ table.guest_count }} / {{ table.capacity }} seats</div>
+      </div>
+      {% empty %}
+      <p class="no-tables">Seating chart coming soon.</p>
+      {% endfor %}
+    </div>
+  </div>
+
+  <a class="back-link" href="{% url 'home' %}">← Back to Main Page</a>
+
+  <footer>
+    We cannot wait to celebrate with you.
+  </footer>
+
+  {% if found_table %}
+  <script>
+    document.getElementById('floorplan').scrollIntoView({behavior: 'smooth', block: 'center'});
+  </script>
+  {% endif %}
+  {{ guest_names|json_script:"guest-names" }}
+  <script>
+    (function () {
+      var names = JSON.parse(document.getElementById('guest-names').textContent);
+      var input = document.getElementById('search-input');
+      var list = document.getElementById('suggestions');
+      var form = document.getElementById('search-form');
+
+      function show() {
+        var q = input.value.trim().toLowerCase();
+        list.innerHTML = '';
+        if (!q) { list.style.display = 'none'; return; }
+        var matches = names.filter(function (n) {
+          return n.toLowerCase().indexOf(q) === 0;   // starts with what was typed
+        }).slice(0, 8);
+        matches.forEach(function (n) {
+          var li = document.createElement('li');
+          li.textContent = n;
+          li.addEventListener('mousedown', function (e) {
+            e.preventDefault();
+            input.value = n;
+            form.submit();
+          });
+          list.appendChild(li);
+        });
+        list.style.display = matches.length ? 'block' : 'none';
+      }
+
+      input.addEventListener('input', show);
+      input.addEventListener('blur', function () { list.style.display = 'none'; });
+    })();
+  </script>
+</body>
+</html>

@@ -10,5 +10,6 @@ urlpatterns = [
     path('maryaj/', views.maryaj, name='maryaj'),
     path('kesyon/', views.kesyon, name='kesyon'),
     path('istwanou/', views.istwanou, name='istwanou'),
+    path('chita/', views.chita, name='chita'),
 ]
 
