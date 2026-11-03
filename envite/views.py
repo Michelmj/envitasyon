@@ -27,30 +27,35 @@ def istwanou(request):
 def kesyon(request):
     return render(request, 'envite/kesyon.html')
 
-# Positions are measured on the floor plan image (362 x 717 reference size)
-# and converted to percentages, so they scale with the image.
-IMG_W, IMG_H = 362, 717
+# Positions were measured directly on floorplan.jpeg (622 x 1240 reference
+# pixels) and converted to percentages, so they scale with the image.
+IMG_W, IMG_H = 622, 1240
  
-# Fallback: marker at the table's label (x, y in reference pixels)
+# Fallback: marker at the table's label (x, y)
 TABLE_LABELS = {
-    0: (183, 70), 1: (282, 625), 2: (62, 625), 3: (225, 470), 4: (123, 470),
-    5: (275, 320), 6: (62, 320), 7: (210, 205), 8: (123, 205),
-    9: (285, 100), 10: (62, 100),
+    0: (295, 122), 1: (485, 1062), 2: (95, 1057), 3: (370, 814), 4: (235, 817),
+    5: (470, 564), 6: (105, 574), 7: (355, 354), 8: (235, 372),
+    9: (485, 172), 10: (105, 152),
 }
  
-# Per table: y of first chair, spacing between chairs, chairs per side.
-# Seats count from the end nearest the head table:
-#   1 = inside #1, 2 = outside #1, 3 = inside #2, 4 = outside #2 ...
-SHORT = {'first_y': 62.5, 'spacing': 17.5, 'per_side': 5}          # tables 10, 9
-LONG_START = {8: 145.7, 7: 145.7, 6: 279, 5: 279,
-              4: 412.3, 3: 412.3, 2: 545.7, 1: 545.7}
-TABLES = {10: SHORT, 9: SHORT}
-for _n, _start in LONG_START.items():
-    TABLES[_n] = {'first_y': _start + 9.5, 'spacing': 16.2, 'per_side': 8}
+# y of every chair along one side of the table, starting at the end nearest
+# the head table. Seats: 1 = inside #1, 2 = outside #1, 3 = inside #2, ...
+CHAIR_Y = {
+    10: [107, 138, 169, 200, 231],
+    9:  [107, 138, 169, 200, 231],
+    8:  [268, 295, 321, 348, 382, 409, 436, 463],
+    7:  [268, 295, 321, 348, 382, 409, 436, 463],
+    6:  [497, 524, 551, 578, 613, 640, 667, 694],
+    5:  [497, 524, 551, 578, 613, 640, 667, 694],
+    4:  [728, 755, 782, 809, 844, 871, 898, 925],
+    3:  [728, 755, 782, 809, 844, 871, 898, 925],
+    2:  [959, 986, 1013, 1040, 1074, 1101, 1129, 1156],
+    1:  [959, 986, 1013, 1040, 1074, 1101, 1129, 1156],
+}
  
 LEFT_TABLES = {10, 8, 6, 4, 2}
-INSIDE_X = {True: 106, False: 234}    # left-column tables / right-column tables
-OUTSIDE_X = {True: 79.5, False: 260}
+INSIDE_X = {True: 177.5, False: 402.5}    # left-column tables / right-column tables
+OUTSIDE_X = {True: 135.5, False: 444.5}
  
  
 def _pct(x, y):
@@ -59,15 +64,13 @@ def _pct(x, y):
  
 def seat_spot(table_num, seat):
     """Return (x%, y%) for a table number and seat number, or None."""
-    t = TABLES.get(table_num)
-    if not t or not seat or not 1 <= seat <= 2 * t['per_side']:
+    ys = CHAIR_Y.get(table_num)
+    if not ys or not seat or not 1 <= seat <= 2 * len(ys):
         return None
     left = table_num in LEFT_TABLES
     inside = seat % 2 == 1
-    index = (seat - 1) // 2
     x = INSIDE_X[left] if inside else OUTSIDE_X[left]
-    y = t['first_y'] + index * t['spacing']
-    return _pct(x, y)
+    return _pct(x, ys[(seat - 1) // 2])
  
  
 def table_spot(table_num):
